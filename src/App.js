@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>Inter - Cagliari</h2>
+        <h2>INTER - CAGLIARI</h2>
         <Container>
           <Col>
             <Row>
