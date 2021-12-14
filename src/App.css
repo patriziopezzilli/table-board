@@ -1,16 +1,71 @@
+@import "react-slideshow-image/dist/styles.css";
+
 .App {
   text-align: center;
 }
 
+.slideshow-container {
+  margin-top: 1em;
+  width: 80vw;
+  position: relative;
+}
+.active {
+  background-color: #717171;
+}
+
+.photoSlide {
+  width: 80vw;
+  position: relative;
+  outline: 0.6em solid white;
+  outline-offset: -4px;
+}
+
+.liveImg {
+  width: 20vw;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
   }
+}
+
+.Stadium-Img {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .App-header {
