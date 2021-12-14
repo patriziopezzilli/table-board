@@ -58,7 +58,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    margin-top: 0em;
+    margin-top: 1em;
     margin-bottom: 0.2em;
   }
 }
